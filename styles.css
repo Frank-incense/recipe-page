@@ -1,0 +1,159 @@
+:root {
+    --desktop-backgroud: hsl(30, 54%, 90%);
+    --desktop-foreground: hsl(0, 0%, 100%);
+    --desktop-h2-color: hsl(14, 45%, 36%);
+    --desktop-color: hsl(24, 5%, 18%);
+    --prep-background: hsl(330, 100%, 98%);
+    --prep-h2-color: hsl(332, 51%, 32%);
+} 
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black;   */
+    font-size: 18px; 
+    color: hsl(24, 5%, 18%);
+}
+
+h1 {
+    font-size: 36px;
+    padding: 15px 0px;
+}
+
+h2 {
+    font-size: 32px;
+    padding: 10px 0;
+    color: hsl(14, 45%, 36%);
+}
+
+.description{
+    width: 90%;
+}
+
+.number {
+    color: hsl(14, 45%, 36%);
+}
+
+.instruction, .nutrition {
+    bottom: 2px solid hsl(30, 10%, 34%);
+}
+
+/* Desktop design */
+body {
+    margin: 0;
+    width: 100%;
+    font-family: "Outfit";
+    background-color: var(--desktop-backgroud);
+}
+
+main {
+    max-width: 800px;
+    margin: 100px auto;
+    background-color: var(--desktop-foreground);
+    border-radius: 15px;
+}
+
+img{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    margin: 2.65%;
+    border-radius: 15px;
+}
+
+.mobile {
+    width: 90%;
+    margin: auto;
+}
+
+.prep {
+    background-color: var(--prep-background);
+    width: 100%;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.prep > h2 {
+    color: var(--prep-h2-color);
+    font-size: 24px;
+}
+
+li {
+    padding: .8em 0;
+}
+
+.table {
+    width: 100%;
+    padding: 15px 0;
+}
+
+.row {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid hsl(30, 18%, 87%);
+    display: flex;
+}
+
+.row p {
+    width: 50%;
+}
+
+.row p:first-of-type {
+    padding-left: 35px;
+}
+
+.col2 {
+    color: var(--desktop-h2-color);
+    font-weight: 600;
+}
+
+hr {
+    margin: 1.5rem 0;
+    color: hsl(30, 18%, 87%, 0.2);
+}
+
+
+/* Mobile design */
+
+@media (max-width: 600px) {  
+    body {
+        background-color: white;
+    }  
+    main {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    img {
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .mobile {
+        width: 80%;
+        margin: auto;
+    }
+    .nutrition {
+        margin-bottom: 50px;
+    }
+}
+.instruction > p {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    letter-spacing: 0.6px;
+    line-height: 1.3rem;
+}
+
+bold {
+    font-weight: 600;
+}
+
+
